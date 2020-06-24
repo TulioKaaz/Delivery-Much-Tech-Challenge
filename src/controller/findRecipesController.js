@@ -20,7 +20,7 @@ module.exports = {
     );
 
     const recipes = await getRecipsPuppyAPI.results.map(recipe => {
-      const cleanTitle = textHandler.clearText(recipe.title);
+      const cleanTitle = textHandler.deleteSpaces(recipe.title);
       const arrayOfIngredients = textHandler.transformTextInArray(
         recipe.ingredients,
       );
