@@ -17,6 +17,9 @@
       "prettier"
     ],
     "rules": {
-      "prettier/prettier": "error"
+      "prettier/prettier": "error",
+      "camelcase": "off",
+      "no-plusplus": "off",
+      "no-await-in-loop": "off"
     }
 }
