@@ -6,7 +6,7 @@ module.exports = {
       baseURL: 'https://api.giphy.com/v1/gifs',
     });
 
-    const api_key = 'cL7kvfhq0HL3HEoVeFTIEJyXfcwJ10kF';
+    const api_key = process.env.GIF_API;
     const q = titleForSearch;
     const limit = 1;
     const offset = 0;
